@@ -1,10 +1,13 @@
 {
+  "homepage": "https://king-dorji.github.io/BYB",
   "name": "personal-portfolio-2",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "predeploy": "yarn run build",
+    "deploy": "gh-pages -d dist",
     "build": "vite build",
     "preview": "vite preview"
   },
@@ -22,6 +25,7 @@
     "@types/react": "^18.0.26",
     "@types/react-dom": "^18.0.9",
     "@vitejs/plugin-react": "^3.0.0",
+    "gh-pages": "^6.1.1",
     "vite": "^4.0.0"
   }
 }
